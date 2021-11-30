@@ -30,15 +30,15 @@ while Quit == "n":
     A /= GCD
     B /= GCD
     C /= GCD
-    #you want C to be positive for some reason???
-    if C < 0:
+    #you want C to be positive for some reason???y
+    if B < 0:
         A *= -1
         B *= -1
         C *= -1
     #print the line and clean it
     print(("Line: " + str(int(B)) + "x" + "+" + str(int(A)) + "y=" + str(int(C))).replace("-1","-").replace("1x","x").replace("1y","y").replace("+-", "-"))
     #ask to quit
-    Quit = str(input("Quit? "))
+    Quit = str(input("Quit? y/n "))
     if Quit == "y":
         print ("Goodbye")
         break
